@@ -38,7 +38,7 @@ exit 0
   exit 0
 }
 clear
-echo "QUAL PORTA DESEJA ATIVAR?"
+echo "KUAL PORTA DESEJA ATIVAR?"
 read porta
 echo
 echo "Instalando Painel Dtunnel Mod..."
@@ -59,7 +59,7 @@ sudo apt-get install git -y
 curl -s -L https://raw.githubusercontent.com/vpsvip7/paineldtunnel/refs/heads/main/setup_20.x | bash
 sudo apt-get install nodejs -y
 #=========================
-git clone https://github.com/Satoshi-v/paineldtunnel.git
+git clone https://github.com/vpsvip7/paineldtunnel.git
 cd /root/paineldtunnel 
 chmod 777 pon poff menudt backmod
 mv pon poff menudt backmod /bin
