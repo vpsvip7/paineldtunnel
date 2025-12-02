@@ -56,7 +56,7 @@ sudo apt-get install cron -y
 sudo apt-get install unzip -y
 sudo apt-get install screen -y
 sudo apt-get install git -y
-curl -s -L https://raw.githubusercontent.com/Satoshi-v/paineldtunnel/main/setup_20.x | bash
+curl -s -L https://raw.githubusercontent.com/vpsvip7/paineldtunnel/refs/heads/main/setup_20.x | bash
 sudo apt-get install nodejs -y
 #=========================
 git clone https://github.com/Satoshi-v/paineldtunnel.git
