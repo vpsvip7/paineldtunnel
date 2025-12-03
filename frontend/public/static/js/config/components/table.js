@@ -22,7 +22,6 @@ export default class Table {
               </th>
               <th scope="col" class="border-0" placeholder="#">#</th>
               <th scope="col" class="border-0" placeholder="Nome">Nombre</th>
-              <th scope="col" class="border-0" placeholder="Categoria">Categoria</th>
               <th scope="col" class="border-0" placeholder="Ordem">Orden</th>
               <th scope="col" class="border-0" placeholder="Modo">Modo</th>
               <th scope="col" class="border-0" placeholder="Status">Status</th>
