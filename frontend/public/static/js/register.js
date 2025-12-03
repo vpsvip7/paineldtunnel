@@ -104,16 +104,16 @@ class RegisterModalSuccess {
                         </div>
                         <div class="form-control bg-dark text-white __data" style="overflow-y: auto;">
                             <b>
-                                <p class="mb-2">💻 Usuário: <span class="__username"></span></p>
+                                <p class="mb-2">💻🇦🇷 Usuário: <span class="__username"></span></p>
                             </b>
                             <b>
-                                <p class="mb-2">🔑 Senha: <span class="__password"></span></p>
+                                <p class="mb-2">🔑🇦🇷 Senha: <span class="__password"></span></p>
                             </b>
                             <b>
-                                <p class="mb-2">🔗 Link de acesso: <a href="${window.location.origin + '/login'}">${window.location.origin + '/login'}</a></p>
+                                <p class="mb-2">🔗🇦🇷 Link de acesso: <a href="${window.location.origin + '/login'}">${window.location.origin + '/login'}</a></p>
                             </b>
                             <b>
-                                <p class="mb-2">🎞 Alterar Token: <a href="https://youtu.be/hz2zCdgvRzA" target="_blank">https://youtu.be/hz2zCdgvRzA</a></p>
+                                <p class="mb-2">🎞🇦🇷 Alterar Token: <a href="https://youtu.be/hz2zCdgvRzA" target="_blank">https://youtu.be/hz2zCdgvRzA</a></p>
                             </b>
                             <ul class="mt-4">
                                 <li>
