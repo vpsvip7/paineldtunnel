@@ -11,7 +11,7 @@ exit 0
 
 ubuntuV=$(lsb_release -r | awk '{print $2}' | cut -d. -f1)
 
-[[ $(($ubuntuV < 20)) = 1 ]] && {
+[[ $(($ubuntuV < 10)) = 1 ]] && {
 clear
 echo "FAVOR INSTALAR NO UBUNTU 20.04 OU 22.04! O SEU É $ubuntuV"
 echo
