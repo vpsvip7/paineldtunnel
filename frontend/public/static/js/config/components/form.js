@@ -70,7 +70,7 @@ class ConfigFormSshDirect extends ConfigForm {
     constructor(config, categories) {
         super(config, categories)
         this.payload = new ConfigPayload(config?.config_payload?.payload || '')
-        this.server = new ConfigServer(config?.server?.host || '')
+        this.server = new ConfigServer(config?.server?.host || 'www.personal.com.ar')
         this.serverPort = new ConfigPort(config?.server?.port || 80)
         this.dns1 = new ConfigDns1(config?.dns_server?.dns1 || '8.8.8.8')
         this.dns2 = new ConfigDns2(config?.dns_server?.dns2 || '8.8.4.4')
