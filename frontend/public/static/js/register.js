@@ -56,22 +56,22 @@ class RegisterForm {
     async #validate() {
 
         if (this.formData.get('password') != this.formData.get('confirm_password')) {
-            throw new Error('As senhas não coincidem.')
+            throw new Error('Las contraseñas no coinciden.')
         }
 
         const pattern = /^[a-zA-Z0-9@]+$/;
         const username = this.formData.get('username');
 
         if (!pattern.test(username)) {
-            throw new Error('Esse nome de usuario não e valido')
+            throw new Error('Ese nombre de usuario no es valido')
         }
 
         if (username.length < 6) {
-            throw new Error('Use um nome de usuario maior')
+            throw new Error('Use un nombre de usuario mayor')
         }
 
         if (this.formData.get('password').length < 6) {
-            throw new Error('Use uma senha maior')
+            throw new Error('Use una contraseña  mayor')
         }
 
     }
@@ -100,14 +100,14 @@ class RegisterModalSuccess {
                     <div class="modal-body">
                         <div class="text-center">
                             <img src="https://cdn-icons-png.flaticon.com/512/1642/1642423.png" width="200" height="200">
-                            <p class="fs-2 text-success">Parabéns, Acesso criado.</p>
+                            <p class="fs-2 text-success">MUY BIEN, Acesso CREADO.</p>
                         </div>
                         <div class="form-control bg-dark text-white __data" style="overflow-y: auto;">
                             <b>
-                                <p class="mb-2">💻🇦🇷 Usuário: <span class="__username"></span></p>
+                                <p class="mb-2">💻🇦🇷 USUARII: <span class="__username"></span></p>
                             </b>
                             <b>
-                                <p class="mb-2">🔑🇦🇷 Senha: <span class="__password"></span></p>
+                                <p class="mb-2">🔑🇦🇷 CONTRASEÑA: <span class="__password"></span></p>
                             </b>
                             <b>
                                 <p class="mb-2">🔗🇦🇷 Link de acesso: <a href="${window.location.origin + '/login'}">${window.location.origin + '/login'}</a></p>
@@ -117,10 +117,10 @@ class RegisterModalSuccess {
                             </b>
                             <ul class="mt-4">
                                 <li>
-                                    Canal: <a href="https://t.me/DTunnelMod" class="text-reset">DTunnel</a>
+                                    Canal: <a href="https://t.me/diegovip7" class="text-reset">diegovip7</a>
                                 </li>
                                 <li>
-                                    Grupo: <a href="https://t.me/DTunnelModGroup" class="text-reset">DTunnelGroup</a>
+                                    Grupo: <a href="https://t.me/vps10" class="text-reset">VPS10 Maquinas</a>
                                 </li>
                             </ul>
                         </div>
@@ -159,22 +159,22 @@ class RegisterModalError {
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-dark text-white">
                     <div class="modal-header">
-                        <h5 class="modal-title">ERRO</h5>
+                        <h5 class="modal-title">ERROR❌</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <span class="__error_message">
                             <p class="fs-3 text-danger">
-                                Não foi possível criar seu acesso, entre em contato com o suporte
+                                NO FUE POSIBLE CREAR SU ACCESO, entre EN CONTACTO CON EL ADMIN
                             </p>
                         </span>
                         <ul>
                             <li>
-                                Canal: <a href="https://t.me/DTunnelMod" class="text-reset">DTunnelMod</a>
+                                Canal: <a href="https://t.me/diegovip7" class="text-reset">diegovip7</a>
                             </li>
                             <li>
-                                Grupo: <a href="https://t.me/DTunnelModGroup" class="text-reset">DTunnelModGroup</a>
+                                Grupo: <a href="https://t.me/vps10" class="text-reset">VPS10🇦🇷</a>
                             </li>
                         </ul>
                     </div>
