@@ -16,7 +16,6 @@ class CategoryTable {
                     <th>ID</th>
                     <th>NOMBRE</th>
                     <th>ORDEN</th>
-                    <th scope="col">COLOR</th>
                     <th>STATUS</th>
                     <th>ACCION</th>
                 </tr>
