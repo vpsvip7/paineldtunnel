@@ -3,7 +3,7 @@ clear
 IP=$(wget -qO- ipv4.icanhazip.com)
 [[ "$(whoami)" != "root" ]] && {
 echo
-echo "VOCÊ PRECISA EXECUTAR INSTALAÇÃO COMO ROOT!"
+echo "USTED PRECISA EJECUTAR INSTALACION COMO ROOT!"
 echo
 rm install.sh
 exit 0
@@ -13,14 +13,14 @@ ubuntuV=$(lsb_release -r | awk '{print $2}' | cut -d. -f1)
 
 [[ $(($ubuntuV < 10)) = 1 ]] && {
 clear
-echo "FAVOR INSTALAR NO UBUNTU 20.04 OU 22.04! O SEU É $ubuntuV"
+echo "FAVOR INSTALAR EN UBUNTU 18 A 22  $ubuntuV"
 echo
 rm /root/install.sh
 exit 0
 }
 [[ -e /root/paineldtunnel/src/index.ts ]] && {
   clear
-  echo "O PAINEL JÁ ESTÁ INSTALADO. DESEJA REMOVÊ-LO? (s/n)"
+  echo "EL PAINEL YA ESTA INSTALADO. DESEA REMOVERLO? (s/n)"
   read remo
   [[ $remo = @(s|S) ]] && {
   cd /root/paineldtunnel
@@ -38,10 +38,10 @@ exit 0
   exit 0
 }
 clear
-echo "KUAL PORTA DESEJA ATIVAR?"
+echo "CUAL PUERTO DESEA ACTIVAR?"
 read porta
 echo
-echo "Instalando Painel Dtunnel Mod..."
+echo "Instalando Panel Dtunnel Mod..."
 echo
 sleep 3
 #========================
@@ -81,11 +81,11 @@ npm run start
 clear
 echo
 echo
-echo "PAINEL DTUNNEL MOD INSTALADO COM SUCESSO!"
+echo "PANEL DTUNNEL MOD INSTALADO CON SUCESSO!"
 echo "Os Arquivos Ficam Na Pasta /root/paineldtunnel"
 echo
-echo "Comando para ATIVAR: pon"
-echo "Comando para DESATIVAR: poff"
+echo "Comando para ACTIVAR: pon"
+echo "Comando para DESACTIVAR: poff"
 echo
 echo -e "\033[1;36mDigite comando: \033[1;37mmenudt \033[1;32m(Para acessar o Menu do Painel) \033[0m"
 echo
