@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" translate="no" data-bs-theme="light">
+<html lang="es-ES" translate="no" data-bs-theme="light">
 
 <head>
   <base href="/" target="_blank">
@@ -151,7 +151,7 @@
       }
 
       if (password && password.length < 6) {
-        showToastError('Contraseña muy corta, deve contener almenos 6 caracteres!')
+        showToastError('Contraseña muy corta, debe contener al menos 6 caracteres!')
         return
       }
 
@@ -175,7 +175,7 @@
         if (csrfTokenRefresh) csrfToken = csrfTokenRefresh;
 
         if (response.status === 200) {
-          showToastSuccess('Perfil guardado exitosamente!')
+          showToastSuccess('Perfil Guardado exitosamente!')
           return;
         }
 
@@ -187,7 +187,7 @@
         }
 
       } catch (err) {
-        showToastError('No fue posible alterar sus datos')
+        showToastError('No fue posible ediatar sus datos')
       }
     })
 
